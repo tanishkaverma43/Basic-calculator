@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>🖩 Calculator</title>
+    
+</head>
+<body>
+    <div id="container">
+
+        
+        <div id="blanck"></div>
+        <div id="result">
+            <input type="text" placeholder="0" id="show"></p>
+        </div>
+        <div id="first-row">
+            <input type="button" class="key Ac" onclick="result.value=''" id="ac" value="Ac">
+            <input type="button" class="key per" id="per" onclick="showResult('%')" value="%">
+            <input type="button" class="key del" id="del" onclick="backSpace(result.value)" value="Del">
+            <input type="button" id="div" onclick="showResult('/')" value="/">
+        </div>
+        <div id="second-row">
+            <input type="button" id="numbers" onclick="showResult(7)" class="seven" value="7">
+            <input type="button" id="numbers" class="eight" onclick="showResult(8)" value="8">
+            <input type="button" id="numbers" class="nine" onclick="showResult(9)" value="9">
+            <input type="button" id="mul" onclick="showResult('*')" value="*">
+        </div>
+        <div id="third-row">
+            <input type="button" id="numbers" class="four" onclick="showResult(4)" value="4">
+            <input type="button" id="numbers" class="five" onclick="showResult(5)" value="5">
+            <input type="button" id="numbers" class="six" onclick="showResult(6)" value="6">
+            <input type="button" id="sub" onclick="showResult('-')" value="-">
+        </div>
+        <div id="fourth-row">
+            <input type="button" id="numbers" class="one" onclick="showResult(1)" value="1">
+            <input type="button" id="numbers" class="two" onclick="showResult(2)" value="2">
+            <input type="button" id="numbers" class="three" onclick="showResult(3)" value="3">
+            <input type="button" id="add" onclick="showResult('+')" value="+">
+        </div>
+        <div id="fifth-row">
+            <input type="button" id="numbers" class="doublezero" onclick="showResult('00')" value="00">
+            <input type="button" id="numbers" class="zero" onclick="showResult(0)" value="0">
+            <input type="button" id="numbers" class="dot" onclick="showResult('.')" value=".">
+            <input type="button" id="equal" onclick="calculate(result.value)" value="=">
+        </div>
+<script src="script.js" ></script>
+</body>
+
+</html>
